@@ -1,18 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
-class Statistics extends Component {
-    render() {    
+const Statistics = ({good, neutral, bad, total, positivePercentage}) => {
         return (
             <>
-                <p>Good: {this.props.good}</p>
-                <p>Neutral: {this.props.neutral}</p>
-                <p>Bad: {this.props.bad}</p>
-                <p>CountTotal: {this.props.total}</p>
-                <p>CountPositive: {this.props.positivePercentage}%</p>
-            </>
+                <p>Good: {good}</p>
+                <p>Neutral: {neutral}</p>
+                <p>Bad: {bad}</p>
+                <p>CountTotal: {total}</p>
+                <p>CountPositive: {positivePercentage}%</p>
+            </>            
         )
-    }
 }
 
 

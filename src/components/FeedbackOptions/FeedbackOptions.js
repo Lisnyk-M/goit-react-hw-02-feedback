@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const FeedbackOptions = ({ options, onLeaveFeedback }) => {
-    return (
+    return(
         <>
             <button id={options[0]} onClick={() => onLeaveFeedback(options[0])}>{options[0]}</button>
             <button id={options[1]} onClick={() => onLeaveFeedback(options[1])}>{options[1]}</button>
